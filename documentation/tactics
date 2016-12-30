@@ -1,0 +1,9 @@
+In order to test github we shall develop a small, single responsibility, application.
+
+The purpose of the application shall be to test to a high degree of confidence if a written text is written in a specific language.
+
+The data of this application shall remain private through the use of encryption. 
+
+To encrypt the data we shall use PGP - a form of open source public key encryption. 
+
+The essence of public key encryption is that it contains two linked but distinct keys: The public key, which is used to encrypt information, and the private key, which is used to decrypt the information.
