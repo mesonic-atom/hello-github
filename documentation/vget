@@ -1,0 +1,13 @@
+In order to test github we shall develop two small, single responsibility, applications.
+
+The purpose of these applications shall be to help determine my vote in the upcoming dutch parliamentary election.
+
+This shall be done by analysing the voting behaviour of the current members of parliament.
+
+Therefore one application shall be written to collect the voting records of the current members of parliament, while a second application shall determine the correlations between these votes.
+
+With these correlations we can determine the actual similarities and differences between political parties, and the points in which they tend to compromise.
+
+The data of this application shall remain private through the use of encryption. 
+
+To encrypt the data we shall use PGP - a form of open source public key encryption. 
