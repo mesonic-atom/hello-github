@@ -1,6 +1,25 @@
-Story: obtain the data
+Story: obtain the voting record of parliamentarians in the dutch Tweede Kamer
 
 As a dutch citizen,
 in order to determine who to vote for in the parliamentary elections,
-I want to be able to analyse the behaviour of existing parliamentarians through their voting record.
+I want to be able to analyse the behaviour of existing parliamentarians through their voting record
+and so I want to obtain the voting record of existing parliamentarians.
 
+
+Scenario 1:
+When the application is run,
+Then it connects to https://www.tweedekamer.nl/kamerstukken/stemmingsuitslagen
+Whence it obtains the voting record starting today and reaching back to 2012-09-20,# which shall be stored.
+Voting records that have been obtained previously do not need to be obtained again.
+Finally the application terminates.
+
+Scenario 2:
+When the application is run,
+but cannot connect to https://www.tweedekamer.nl/kamerstukken/stemmingsuitslagen
+then it terminates with an error message.
+
+Scenario 3:
+When the application is run,
+and connects to https://www.tweedekamer.nl/kamerstukken/stemmingsuitslagen
+but finds that the data is no longer available in a compatible format
+then it terminates with an error message.
